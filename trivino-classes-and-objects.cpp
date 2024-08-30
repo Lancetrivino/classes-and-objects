@@ -78,6 +78,8 @@ int main() {
 
         switch (choice) {
             case 1:
+                system ("pause");
+                system ("cls");
                 cout << "Enter book title: ";
                 cin.ignore(); 
                 getline(cin, title);
@@ -86,26 +88,44 @@ int main() {
                 cout << "Enter publication year: ";
                 cin >> year;
                 library.addBook(title, author, year);
+                system ("pause");
+                system ("cls");
                 break;
 
             case 2:
+                system ("pause");
+                system ("cls");
                 library.displayAllBooks();
+                system ("pause");
+                system ("cls");
                 break;
 
             case 3:
+                system ("pause");
+                system ("cls");
                 cout << "Enter book title to search: ";
                 cin.ignore(); 
                 getline(cin, title);
                 library.searchBookByTitle(title);
+                system ("pause");
+                system ("cls");
                 break;
 
             case 4:
+                system ("pause");
+                system ("cls");
                 cout << "Exiting the program..." << endl;
+                system ("pause");
+                system ("cls");
                 break;
 
-            default:
+           default:
+                system ("pause");
+                system ("cls");
                 cout << "Invalid choice. Please try again." << endl;
-        }
+                system ("pause");
+                system ("cls");
+        }   
     } while (choice != 4);
 
     return 0;
